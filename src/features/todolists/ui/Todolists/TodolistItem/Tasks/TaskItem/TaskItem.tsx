@@ -25,8 +25,6 @@ export const TaskItem = ({ task, todolistId, todolist }: Props) => {
   }
 
   const changeTaskStatus = (e: ChangeEvent<HTMLInputElement>) => {
-    console.log("🟢 changeTaskStatus ВЫЗВАН", Date.now())
-
     let status = e.currentTarget.checked ? TaskStatus.Completed : TaskStatus.New
 
     const model: UpdateTaskModel = {
