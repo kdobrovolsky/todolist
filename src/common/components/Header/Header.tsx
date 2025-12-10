@@ -21,7 +21,7 @@ import { Path } from "@/common/routing/Routing.tsx"
 import { useLogoutMutation } from "@/features/auth/api/authApi.ts"
 import { AUTH_TOKEN } from "@/common/constants"
 import { ResultCode } from "@/common/enums"
-import { baseApi } from "@/src/app/baseApi.ts"
+import { baseApi } from "@/app/baseApi.ts"
 
 export const Header = () => {
   const themeMode = useAppSelector(selectThemeMode)

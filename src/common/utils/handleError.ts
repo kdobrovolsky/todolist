@@ -1,7 +1,7 @@
 import { ResultCode } from "@/common/enums"
 
 import { BaseQueryApi, FetchBaseQueryError, FetchBaseQueryMeta, QueryReturnValue } from "@reduxjs/toolkit/query/react"
-import { isErrorWithMessage } from "@/src/common/utils/isErrorWithMessage.ts"
+import { isErrorWithMessage } from "@/common/utils/isErrorWithMessage.ts"
 import { setAppErrorAC } from "@/app/appSlice.ts"
 
 export const handleError = (
