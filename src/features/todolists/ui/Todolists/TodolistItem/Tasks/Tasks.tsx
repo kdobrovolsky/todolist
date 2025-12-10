@@ -33,6 +33,8 @@ export const Tasks = ({ todolist }: Props) => {
     filteredTasks = filteredTasks?.filter((task) => task.status === TaskStatus.Completed)
   }
 
+  const resultDataTotalCount = data?.totalCount ? data?.totalCount : 0
+
   return (
     <>
       {filteredTasks?.length === 0 ? (
@@ -43,7 +45,7 @@ export const Tasks = ({ todolist }: Props) => {
         </List>
       )}
 
-      {data?.totalCount && data?.totalCount > PAGE_SIZE && (
+      {resultDataTotalCount > PAGE_SIZE && (
         <TasksPagination page={page} setPage={setPage} totalCount={data?.totalCount || 0} />
       )}
     </>
